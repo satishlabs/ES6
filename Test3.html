@@ -1,0 +1,58 @@
+<html>
+    <head><title>Spread and Rest Operator</title></head>
+    <p>Spread and Rest Operator</p>
+    <script>
+        function sum(...arsg){
+            console.log(arsg);
+        }
+        sum(10,20,30)
+        sum(1,2,3,4,5,6,7)
+
+
+        let arr=[1,2,3]
+        let arr1 =[arr,4,5];
+        console.log(arr1);
+
+        let arr2=[...arr,4,5];
+        console.log(arr2);
+
+        const stu={
+            sid: 101,
+            snamne:"Satish",
+            email:'sa@sap',
+        }
+        console.log(stu);
+
+        const stu1={
+            stu,
+            phone:1234,
+            city:"Blore",
+        }
+        console.log(stu1);
+
+        const stu2={
+            ...stu,
+            phone:4321,
+            city:"Blore",
+        }
+        console.log(stu2);
+
+        const mystu={
+            sid:101,
+            sname:"Satish",
+            email:"Sa@gmail",
+            courses:['Java','Angular','ReactJS'],
+            address:{
+                city:"Blore",
+                state:"KA",
+                pincode:560098
+            }
+        }
+        console.log(mystu);
+
+        let mystu1={
+            ...mystu
+        }
+        console.log(mystu1);
+    </script>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <head>Primitives and References</head>
+
+    <body>
+        
+        <script>
+               
+        let x=10;
+           let y=x;
+            x=55
+            console.log(y+" "+x)
+
+            let arr1=[1,2,3];
+            let arr2 = arr1;
+            console.log(arr1);
+            arr2.push(5);
+            console.log(arr2);
+
+            const a=10;
+            const b=a;
+            //a=55;
+            console.log(a+" "+b);
+
+            //--------------------------------------
+
+            const arr3=[1,2,3];
+            const arr4 = arr3;
+            arr3.push(5)
+            console.log("["+arr3+"],"+"["+arr4+"]")
+        </script>
+    </body>
+</html>
