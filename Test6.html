@@ -1,0 +1,79 @@
+<html>
+    <p>Test6</p>
+    <body>
+        <script>
+            const array = [1, 1, 2, 3, 5, 5, 1]
+            const uniqueArray = [...new Set(array)];
+            console.log(uniqueArray); // Result: [1, 2, 3, 5]
+
+            let one = 1, two = 2, three = 3;
+            console.log(one && two && three);
+            console.log(0 && null);
+
+            console.log( one || two || three);
+            console.log(0 || null);
+
+           //Convert to Boolean
+           const isTrue = !0; //true
+           const isFalse = !1; //false
+           const alsoFalse = !!0; //false
+           console.log(isTrue+" "+isFalse+" "+alsoFalse);
+           console.log(typeof true); //boolean
+
+            //Convert to String
+            const val = 1 + 4 + "" +2; 
+            console.log(val); //52
+            console.log(typeof val); //string
+
+            //Convert to Number
+            let int = "15"+ 2;
+            int = +int;
+            console.log(int);
+            console.log(typeof int); //number
+
+            console.log(+true);  // Return: 1
+            console.log(+false); // Return: 0
+
+            const int1 = ~"15";
+            console.log(int1); //-16 (-n-1)
+
+            const int2 = ~~"15";
+            console.log(int2); //15
+            console.log(typeof int1);
+
+            //Quick Powers
+            console.log(2 ** 3); //8 
+            console.log(2**4);
+
+            //Quick Float to Integer
+            console.log(23.9 | 0);  // Result: 23
+            console.log(-23.9 | 0); // Result: -23
+
+            //Remove Final Digits
+            let str = "1553";
+            console.log(Number(str.substring(0,str.length -2))); //15
+            console.log(1553 / 10   | 0)  // Result: 155
+            console.log(1553 / 100  | 0)  // Result: 15
+            console.log(1553 / 1000 | 0)  // Result: 1
+
+
+            //Truncate an Array
+            let array1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+            array1.length = 4;
+            console.log(array1); //Result: [0, 1, 2, 3]
+
+            let array2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+            array2 = array2.slice(0, 4);
+            console.log(array2); // Result: [0, 1, 2, 3]
+
+            //Get the Last Item(s) in an Array
+            let array3 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+            console.log(array3.slice(-1)); // Result: [9]
+            console.log(array3.slice(-2)); // Result: [8, 9]
+            console.log(array3.slice(-3)); // Result: [7, 8, 9]
+
+            //Format JSON Code
+            console.log(JSON.stringify({ alpha: 'A', beta: 'B' }, null, '\t'));
+        </script>
+    </body>
+</html>
